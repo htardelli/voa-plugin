@@ -1,0 +1,47 @@
+openapi: 3.0.1
+info:
+  title: VOA - Envio de Alertas
+  description: Envia alertas estruturados para o webhook do Make
+  version: "1.0.0"
+servers:
+  - url: https://hook.us2.make.com
+paths:
+  /zmi2nb5ji0ltwmqqwxklnqdr96xwbson:
+    post:
+      summary: Envia alerta de viagem para planilha
+      operationId: enviarAlerta
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                programa:
+                  type: string
+                origem:
+                  type: string
+                destino:
+                  type: string
+                ida_data:
+                  type: string
+                ida_milhas:
+                  type: string
+                volta_data:
+                  type: string
+                volta_milhas:
+                  type: string
+                taxas_aeroportuarias:
+                  type: string
+                disponibilidade_ida:
+                  type: string
+                disponibilidade_volta:
+                  type: string
+                observacoes:
+                  type: string
+                link:
+                  type: string
+      responses:
+        '200':
+          description: Alerta recebido com sucesso
+
