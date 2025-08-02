@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "voa_alertas_plugin",
+  "name_for_human": "VOA - Envio de Alertas",
+  "description_for_model": "Envia alertas de viagens para um webhook do Make.com em formato estruturado.",
+  "description_for_human": "Plugin para registrar automaticamente alertas de viagem em uma planilha Google via Make.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://htardelli.github.io/voa-plugin/openapi.yaml"
+  },
+  "logo_url": "https://htardelli.github.io/voa-plugin/logo.png",
+  "contact_email": "wamosviajar@gmail.com",
+  "legal_info_url": "https://sites.google.com/view/wamosviajar/politica_voa"
+}
